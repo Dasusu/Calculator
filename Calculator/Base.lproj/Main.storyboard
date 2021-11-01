@@ -20,7 +20,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRV-xt-y9G">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="136.33333333333334"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -249,7 +249,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PML-Wi-MCO">
                                                         <rect key="frame" x="203" y="0.0" width="195" height="93.333333333333329"/>
                                                         <subviews>
-                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPz-Pc-fbE">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPz-Pc-fbE">
                                                                 <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="93.333333333333329"/>
                                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -257,7 +257,7 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="dot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gk-7O-xEW"/>
+                                                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pj9-YE-5gO"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy9-Qy-0EQ">
@@ -284,7 +284,6 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nk9-wP-1b3" secondAttribute="trailing" constant="8" id="0vw-O2-jev"/>
-                            <constraint firstItem="yvX-57-p0c" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="7:10" id="Eeu-tO-8BR"/>
                             <constraint firstItem="nk9-wP-1b3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ez2-Vb-l31"/>
                             <constraint firstItem="JRV-xt-y9G" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1:6" id="HCi-h7-hcE"/>
                             <constraint firstItem="nk9-wP-1b3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mso-7z-GQ4"/>
@@ -292,7 +291,26 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="numberOnScreen" destination="JRV-xt-y9G" id="UTq-lo-0Za"/>
+                        <outlet property="numberOnScreenLabel" destination="JRV-xt-y9G" id="UTq-lo-0Za"/>
+                        <outletCollection property="buttons" destination="fT7-sj-btq" collectionClass="NSMutableArray" id="CFx-N4-HBh"/>
+                        <outletCollection property="buttons" destination="T5u-R7-eaa" collectionClass="NSMutableArray" id="OYM-Pl-XWp"/>
+                        <outletCollection property="buttons" destination="oiP-HL-lpk" collectionClass="NSMutableArray" id="kmk-9h-0ge"/>
+                        <outletCollection property="buttons" destination="Wgd-OD-jjq" collectionClass="NSMutableArray" id="hg2-yq-vb3"/>
+                        <outletCollection property="buttons" destination="pV2-gR-NUC" collectionClass="NSMutableArray" id="zqs-Ci-0Xd"/>
+                        <outletCollection property="buttons" destination="bKM-J1-CsX" collectionClass="NSMutableArray" id="G7p-6x-n5j"/>
+                        <outletCollection property="buttons" destination="GnW-af-ec5" collectionClass="NSMutableArray" id="khc-HU-DQC"/>
+                        <outletCollection property="buttons" destination="JYZ-5P-pH4" collectionClass="NSMutableArray" id="lly-A6-vcx"/>
+                        <outletCollection property="buttons" destination="7N2-Xp-0bG" collectionClass="NSMutableArray" id="pZP-N4-D9r"/>
+                        <outletCollection property="buttons" destination="Ql2-e2-MRD" collectionClass="NSMutableArray" id="ZaB-e6-PIl"/>
+                        <outletCollection property="buttons" destination="Qp9-Z3-iiN" collectionClass="NSMutableArray" id="0c4-om-JI8"/>
+                        <outletCollection property="buttons" destination="sAS-xq-5Jf" collectionClass="NSMutableArray" id="Wz7-TZ-k3U"/>
+                        <outletCollection property="buttons" destination="O1f-SJ-iDq" collectionClass="NSMutableArray" id="k6r-2w-GG2"/>
+                        <outletCollection property="buttons" destination="6ar-dh-zoW" collectionClass="NSMutableArray" id="4qd-Mh-fzZ"/>
+                        <outletCollection property="buttons" destination="4QV-bl-g7i" collectionClass="NSMutableArray" id="G2T-Hv-fiU"/>
+                        <outletCollection property="buttons" destination="Ast-jf-9i3" collectionClass="NSMutableArray" id="S2a-vX-zby"/>
+                        <outletCollection property="buttons" destination="7fa-om-td0" collectionClass="NSMutableArray" id="yPI-Fb-ySy"/>
+                        <outletCollection property="buttons" destination="MPz-Pc-fbE" collectionClass="NSMutableArray" id="OS7-oA-OET"/>
+                        <outletCollection property="buttons" destination="Wy9-Qy-0EQ" collectionClass="NSMutableArray" id="CQL-UT-A2f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
